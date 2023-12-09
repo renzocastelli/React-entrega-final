@@ -1,0 +1,99 @@
+:root{
+    --color-txt-nav: orange;
+    --orange: orange;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:black ;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+/* containerBrand */
+header .containerBrand{
+    width: 10%;
+    min-width: 150px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+header .containerBrand img{
+
+}
+
+/* containerList */
+header .containerItemList{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: large;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header .containerItemList ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+
+}
+
+header .containerItemList ul li a {
+    text-decoration: none;
+    
+    margin: 0 0 0 50px;
+    color: var(--orange);
+
+}
+
+/* containerCart */
+
+header .containerCart{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 72px;
+}
+
+header .containerCart .containerLength{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+header .containerCart .containerLength .cantCart{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--orange);
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 80%;
+    border-radius: 50%;
+}
+
+
